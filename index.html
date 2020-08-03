@@ -1,33 +1,55 @@
-<DOCTYPE html>
-<html>
+<!DOCTYPE html>
+<html lang="en">
 <head>
-	<title>Quiz  7</title>s
-	<link rel="stylesheet" href="css/main.css">
-
+  <title>Bootstrap Example</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  <style>
+    /* Remove the navbar's default margin-bottom and rounded borders */ 
+    .navbar {
+      margin-bottom: 0;
+      border-radius: 0;
+    }
+    
+    /* Add a gray background color and some padding to the footer */
+    footer {
+      background-color: #f2f2f2;
+      padding: 25px;
+    }
+  </style>
 </head>
 <body>
-	<header>
-		<nav>
-			<ul>
-			<li><a href="a">Home</a></li>
-			<li><a href="a">Products</a></li>
-			<li><a href="a">Services</a></li>
-			<li><a href="a">Gallery</a></li>
-			<li><a href="a">Contacts</a></li>
-		</ul>
-		</nav>
-	</header>
 
-	<div class="container">
-     <h1>Nav website</h1>
-     <h3>Sub hearder</h3>
-     <p>Eshe Salah is a Developer</p>
-     <img src="images/sleeping-kittens.png">
-     <footer>
-     	copyright 2021. All rights reserved.
-     </footer>
-	
+<nav class="navbar navbar-inverse">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>                        
+      </button>
+      <a class="navbar-brand" href="#">Portfolio</a>
+    </div>
+    <div class="collapse navbar-collapse" id="myNavbar">
+      <ul class="nav navbar-nav">
+        <li class="active"><a href="#">Home</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Gallery</a></li>
+        <li><a href="#">Contact</a></li>
+      </ul>
+      <ul class="nav navbar-nav navbar-right">
+        <li><a href="#"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
 
-
-</body>
-</html>
+<div class="jumbotron">
+  <div class="container text-center">
+    <h1>My Portfolio</h1>      
+    <p>Hello my  name is Eshe and  am a Back-End-Developer  </p>
+  </div>
+</div>
